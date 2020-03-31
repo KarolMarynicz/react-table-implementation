@@ -1,0 +1,31 @@
+@import "src/global";
+
+$cell-font-size: 1rem;
+
+.table-row {
+  background-color: white;
+  border-bottom: 1px solid $border-color;
+  color: $text-color;
+}
+.table-row:last-of-type {
+  border-bottom: none;
+}
+.table-row:hover {
+  background-color: $row-hover-color;
+}
+
+.table-cell {
+  @extend %padding;
+
+  font-size: $cell-font-size;
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .table-row {
+    min-height: 200px;
+  }
+
+  .table-cell {
+    padding: 2px 5px;
+  }
+}

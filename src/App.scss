@@ -1,0 +1,21 @@
+@import "global";
+
+.app {
+  @extend %flex-centered;
+
+  background-color: $background-color;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width: $breakpoint-mobile + 1) {
+  .app {
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .app {
+    justify-content: flex-start;
+  }
+}

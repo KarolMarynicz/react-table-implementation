@@ -1,0 +1,23 @@
+@import "src/global";
+
+$header-font-size: 1.3rem;
+
+.header {
+  background-color: $primary-color;
+  color: white;
+  font-size: $header-font-size;
+}
+
+.header-cell {
+  @extend %clickable;
+
+  font-weight: 300;
+  padding: 20px 35px;
+  user-select: none;
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .header-cell {
+    padding: 5px 15px;
+  }
+}

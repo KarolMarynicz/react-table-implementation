@@ -1,0 +1,21 @@
+@import "src/global";
+
+$cell-font-size: 1rem;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.table {
+  border-collapse: collapse;
+  display: inline-block;
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .container {
+    margin-top: 102px;
+  }
+}
+
